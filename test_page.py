@@ -11,6 +11,7 @@ class Test_page(object):
     ignore_list = ['SA-LINUXSA-10']
     # the list has several tests. But those tests are never shown or recorded.
     # ignore to improve performance
+    # outdated
 
     def __init__(self, uname, psswd, homepage):
         '''Initializes the required elements such as username and password.
@@ -23,6 +24,9 @@ class Test_page(object):
         self.home_page = homepage
         self.tests = []
         self.update_test_case_data()
+
+    def new_function(self):
+        print "To be filled"
 
     def update_test_case_data(self):
         '''Ensure the existing test case data is the lastest result.
